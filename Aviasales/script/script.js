@@ -13,7 +13,7 @@ const formSearch = document.querySelector('.form-search'),
 const citiesApi = 'http://api.travelpayouts.com/data/ru/cities.json',      //dataBase/cities.json
     proxy = 'https://cors-anywhere.herokuapp.com/',
     API_KEY = 'fc850e7823ddd76bddbc7aa9cc8a6468',
-    calendar = 'http://min-prices.aviasales.ru/calendar_preload',
+    calendar = 'https://min-prices.aviasales.ru/calendar_preload',
     MAX_COUNT = 10;
 
 let city = [];
@@ -21,7 +21,7 @@ let city = [];
 // Функции
 
 const getData = (url, callback) => {
-    const request = new XMLHttpRequest(url);
+    const request = new XMLHttpRequest();
 
     request.open('GET', url);
 
