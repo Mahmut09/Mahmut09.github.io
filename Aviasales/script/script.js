@@ -9,10 +9,14 @@ const formSearch = document.querySelector('.form-search'),
     otherCheapTickets = document.getElementById('other-cheap-tickets'),
     modalDestination = document.querySelector('.modal-destination'),
     modalErr = document.querySelector('.modal-err'),
+    modalComming = document.querySelector('.modal-comming'),
     all = document.querySelector('*'),
     header = document.querySelector('header'),
     main = document.querySelector('main'),
-    plane = document.querySelector('.plane');
+    plane = document.querySelector('.plane'),
+    bus = document.querySelector('.bus'),
+    train = document.querySelector('.train'),
+    back = document.querySelector('.back');
 
 // Данные
 
@@ -212,15 +216,34 @@ dropdownCitiesTo.addEventListener('click', (event) => {
     selectCity(event, inputCitiesTo, dropdownCitiesTo);
 });
 
-all.addEventListener('click', () => {
+train.addEventListener('click', () => {
+    modalComming.style.display = 'flex';
+    console.log('te');
+});
+
+bus.addEventListener('click', () => {
+    modalComming.style.display = 'flex';
+});
+
+modalComming.addEventListener('click', () => {
+    modalComming.style.display = 'none';
+});
+
+all.addEventListener('click', () => {    // Закрывает все модалки
     modalDestination.style.display = 'none';
     modalErr.style.display = 'none';
 });
 
-plane.addEventListener('click', () => {
+plane.addEventListener('click', () => {  // Если выбрали самолет
     main.style.display = 'block';
     header.style.display = 'none';
 });
+
+back.addEventListener('click', () => {
+    main.style.display = 'none';
+    header.style.display = 'block';
+});
+
 
 formSearch.addEventListener('submit', (event) => {
     event.preventDefault();

@@ -279,7 +279,7 @@ input {
 	width: 780px;
 	margin: 0 auto;
 }
-.modal-destination, .modal-err{
+.modal-destination, .modal-err, .modal-comming{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -292,12 +292,21 @@ input {
 	justify-content: center;
 	align-items: center;
 }
-.modal-destination h3, .modal-err h3{
+.modal-destination h3, .modal-err h3, .modal-comming h3{
 	padding: 40px;
 	border: 2px solid #021825f2;
 	border-radius: 6px;
 	font-size: 26px;
 	background: #021825f2;
+}
+.back {
+	width: 25%;
+}
+.back button {
+	width: 150px;
+}
+.back button::after {
+	transform: rotate(180deg);
 }
 @media(max-width: 768px) {
 	.ticket_wrapper {
@@ -321,6 +330,29 @@ input {
 	}
 	.block-left {
 		margin-bottom: 20px;
+	}
+	header {
+		padding-left: 5px;
+	}
+	.welcome h3 {
+		font-size: 25px;
+	}
+	.kind_of_transport {
+		display: block;
+	}
+	.plane, .bus, .train {
+		width: 65%;
+	}
+	.back {
+		margin-top: 10px;
+	}
+	.back button {
+		margin-left: 15px;
+		width: 80px;
+		font-size: 12px;
+	}
+	.back button::after {
+		transform: rotate(180deg);
 	}
 }
 input {
