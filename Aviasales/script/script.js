@@ -6,7 +6,13 @@ const formSearch = document.querySelector('.form-search'),
     dropdownCitiesTo = document.querySelector('.dropdown_cities-to'),
     inputDateDepart = document.querySelector('.input_date-depart'),
     cheapestTicket = document.getElementById('cheapest-ticket'),
-    otherCheapTickets = document.getElementById('other-cheap-tickets');
+    otherCheapTickets = document.getElementById('other-cheap-tickets'),
+    modalDestination = document.querySelector('.modal-destination'),
+    modalErr = document.querySelector('.modal-err'),
+    all = document.querySelector('*'),
+    header = document.querySelector('header'),
+    main = document.querySelector('main'),
+    plane = document.querySelector('.plane');
 
 // Данные
 
@@ -21,8 +27,8 @@ let city = [];
 // Функции
 
 const getData = (url, callback) => {
-    const request = new XMLHttpRequest();
-
+    const request = new XMLHttpRequest(url);
+    
     request.open('GET', url);
 
     request.addEventListener('readystatechange', () => {
@@ -33,9 +39,10 @@ const getData = (url, callback) => {
         } else {
             console.error(request.status);
         }
-
+        if (request.status === 400) {
+            modalDestination.style.display = 'flex';
+        }
     });
-
     request.send();
 };
 
@@ -144,7 +151,7 @@ const createCard = (data) => {
             </div>
         `;
     } else {
-        deep = '<h3>К сожалению на текущую дату билетов не нашлось!</h3>'
+        deep = '<h2>К сожалению на текущую дату билетов не нашлось!</h2>'
     }
 
     ticket.insertAdjacentHTML('afterbegin', deep)
@@ -173,8 +180,6 @@ const renderCheapYear = (cheapTickets) => {
         const ticket = createCard(cheapTickets[i]);
         otherCheapTickets.append(ticket);
     }
-
-    console.log(cheapTickets);
 };
 
 const renderCheap = (data, date) => { // data - Данные, date - Дата
@@ -207,6 +212,16 @@ dropdownCitiesTo.addEventListener('click', (event) => {
     selectCity(event, inputCitiesTo, dropdownCitiesTo);
 });
 
+all.addEventListener('click', () => {
+    modalDestination.style.display = 'none';
+    modalErr.style.display = 'none';
+});
+
+plane.addEventListener('click', () => {
+    main.style.display = 'block';
+    header.style.display = 'none';
+});
+
 formSearch.addEventListener('submit', (event) => {
     event.preventDefault();
     
@@ -223,15 +238,29 @@ formSearch.addEventListener('submit', (event) => {
         when: inputDateDepart.value,
     };
 
-    if (formData.from && formData.to) {
-        const requestData = '?depart_date=' + formData.when + '&origin=' + formData.from.code + '&destination=' + formData.to.code + '&one_way=true&token=' + API_KEY; // GET Запрос
-        getData(calendar + requestData, (data) => {
-            renderCheap(data, formData.when);
-        }, error => {
-           return alert('В этом направлении нет рейсов'); // Не робит
-        });
+    if (inputCitiesFrom.value === inputCitiesTo.value) {
+        modalErr.style.display = 'flex';
     } else {
-        alert('Введите корректное название');
+        if (formData.from && formData.to) {
+            const requestData = '?depart_date=' + formData.when + '&origin=' + formData.from.code + '&destination=' + formData.to.code + '&one_way=true&token=' + API_KEY; // GET Запрос
+            getData(calendar + requestData, (data) => {
+                renderCheap(data, formData.when);
+            });
+        }
+        if (formData.from) {
+            inputCitiesFrom.style.background = '#1e3c53';
+            inputCitiesFrom.style.color = 'white';
+        } else {
+            inputCitiesFrom.style.background = '#ff000029';
+            inputCitiesFrom.style.color = 'red';
+        }
+        if (formData.to) {
+            inputCitiesTo.style.background = '#1e3c53';
+            inputCitiesTo.style.color = 'white';
+        } else {
+            inputCitiesTo.style.background = '#ff000029';
+            inputCitiesTo.style.color = 'red';
+        }
     }
 });
 
@@ -241,7 +270,6 @@ getData(proxy + citiesApi, (data) => {
     city = JSON.parse(data).filter((item) => {
         return item.name;
     });
-    
     city.sort((a, b) => {
         if (a.name > b.name) {
             return 1;
@@ -249,7 +277,6 @@ getData(proxy + citiesApi, (data) => {
         if (a.name < b.name) {
             return -1;
         }
-        
         return 0;
     });
 

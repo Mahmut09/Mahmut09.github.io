@@ -9,10 +9,49 @@
 </head>
 
 <body>
-	<h1>Авиасалес</h1>
-	<main>
+	<header>
 
 		<section class="wrapper">
+			<div class="welcome">
+				<h1>Добро пожаловать на Авиасалес</h1>
+				<p>
+					У нас вы можете найти самые дешевые билеты на все виды транспорта.
+					Перевозки по всему миру. <br>
+					Лучший способ купить авиабилеты дешево - это Авиасалес.
+				</p>
+				<div class="choose">
+					<h3>Найти самые дешевые билеты на :</h3>
+
+					<div class="kind_of_transport">
+					
+						<div class="plane">
+							Самолет
+							<img src="img/transportation.svg" alt="#">
+						</div>
+					
+						<div class="train">
+							Поезд
+							<img src="img/train.svg" alt="#">
+						</div>
+					
+						<div class="bus">
+							Автобус
+							<img src="img/electric-bus.svg" alt="#">
+						</div>
+						
+					</div>
+				
+				</div>
+			</div>
+
+		</section>
+
+	</header>
+
+	<main>
+	<h1>Авиасалес</h1>
+		<section class="wrapper">
+
 			<form class="form-search">
 				<div class="wrapper_search">
 					<div class="input" style="display: block;">
@@ -60,6 +99,13 @@
 
 		</section>
 
+		<section class="modal-destination">
+			<h3>К сожалению в этом направлении нет рейсов !</h3>
+		</section>
+
+		<section class="modal-err">
+			<h3>Пункт отправки и пункт назначения не могут быть одинаковыми !</h3>
+		</section>
 
 	</main>
 	<script src="script/script.js"></script>
