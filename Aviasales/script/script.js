@@ -21,7 +21,7 @@ let city = [];
 // Функции
 
 const getData = (url, callback) => {
-    const request = new XMLHttpRequest();
+    const request = new XMLHttpRequest(url);
 
     request.open('GET', url);
 
