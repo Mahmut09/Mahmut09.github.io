@@ -1,0 +1,289 @@
+@font-face{
+    src: url('fonts/Poiret.ttf');
+    font-family: 'Poiret'
+}
+@font-face{
+     src: url('fonts/Montserat-Regular.ttf');
+     font-family: 'Montserat-Regular'
+}
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow-x: hidden;  
+}
+.set{
+    background: -moz-linear-gradient(180deg, rgba(15,10,77,1) 0%, rgba(77,0,0,1) 100%); /* ff3.6+ */
+    background: -webkit-linear-gradient(180deg, rgba(15,10,77,1) 0%, rgba(77,0,0,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(180deg, rgba(15,10,77,1) 0%, rgba(77,0,0,1) 100%); /* opera 11.10+ */;
+}
+.container{
+    width: 1470px;
+    margin: auto;
+    height: 996em;
+}
+.welcome{
+    margin: 25px 0 45px 15px;
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Poiret';
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+input[type='text'], input[type='password']{
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 6px;
+    padding-left: 10px;
+    border: none;
+}
+input[type='text']::placeholder, input[type='password']::placeholder{
+    font-family: 'Montserat-Regular';
+}
+.icons img{
+    width: 40px;
+}
+.icons img:hover{
+    filter: brightness(0.5);
+}
+.icons li{
+    margin: 0 10px 40px 0;
+}
+.icons li:first-child{
+    margin: 10px 10px 50px 0;
+}
+.icons li:nth-child(2n){
+    margin-bottom: 45px
+}
+.dws-input{
+    padding-top: 15px;
+
+}
+.icons, .dws-input{
+    display: inline-block;
+    vertical-align: middle;
+}
+.dws-input p{
+    padding: 20px 0 20px 0;
+}
+.dws-submit{
+    padding: 13px 30px;
+    margin: 5px 0 20px 0;
+    font-size: 17px;
+    color: #fff;
+    background-color: #36041d;
+    border: 1px solid #36041d;
+    cursor: pointer;
+    border-radius: 6px;
+    min-width: 135px;
+    margin-top: 20px;
+    color: #757575;
+
+}
+.dws-submit:hover{
+    background-color: #100a4c;
+    transition-duration: 0.3s;
+    color: #fff
+}
+#error, #errorPass, #errorRePass{
+    color: #ac254e;
+    font-size: 18px;
+    margin: 0
+}
+#smallGear1{
+    transition-duration: 3.0s;
+    border-radius: 100%;
+    animation: spin 2s linear infinite;
+    fill: white 
+}
+#bigGear2{
+    transition-duration: 3.7s;
+    border-radius: 100%;
+    animation: reSpin 2s linear infinite;
+    fill: white 
+}
+#smallGear1{
+    position: relative;
+    left: 15px;
+}
+@keyframes spin {
+
+    to {
+        transform: rotateZ(90deg);
+    }
+}
+@keyframes reSpin {
+
+    to {
+        transform: rotateZ(-90deg);
+    }
+}
+#gear2{
+    width: 200px;
+}
+.cssload-container {
+	width: 100%;
+	height: 49px;
+	text-align: center;
+}
+
+.cssload-double-torus {
+	width: 49px;
+	height: 49px;
+	margin: 0 auto;
+	border: 4px double;
+	border-radius: 50%;
+	border-color: transparent rgba(0,0,0,0.9) rgba(0,0,0,0.9);
+	animation: cssload-spin 1500ms infinite linear;
+    -o-animation: cssload-spin 1500ms infinite linear;
+    -ms-animation: cssload-spin 1500ms infinite linear;
+    -webkit-animation: cssload-spin 1500ms infinite linear;
+    -moz-animation: cssload-spin 1500ms infinite linear;
+}
+
+@media screen and (max-width: 320px){
+    /* Mobile */
+      *{
+        margin: 0;
+        padding: 0;
+        overflow-y: scroll;  
+        overflow-x: hidden;  
+    }
+    .welcome {
+        font-size: 16px;
+    }
+    .flex{
+        max-width: 300px;
+        display: block;
+    }
+    .gears{
+        height: 260px;
+        position: relative;
+        bottom: 65px;
+        overflow-x: hidden; 
+        overflow-y: hidden;  
+    }
+    #smallGear1{
+        width: 30%;
+    }
+    #bigGear2{
+        width: 50%;
+    }
+    #form{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    input[type='text'], input[type='password']{
+        width: 78.75%;
+        height: 50px;
+        font-size: 18px;
+        border-radius: 6px;
+        padding-left: 10px;
+        border: none;
+    }
+    .icons{
+        position: relative;
+        left: 15px;
+        width: 21%
+    }
+}
+@media screen and (max-width: 375px){
+    /* Mobile */
+      *{
+        margin: 0;
+        padding: 0;
+        overflow-y: scroll;  
+        overflow-x: hidden;  
+    }
+    .welcome {
+        font-size: 16px;
+    }
+    .flex{
+        max-width: 300px;
+        display: block;
+    }
+    .gears{
+        height: 260px;
+        position: relative;
+        bottom: 65px;
+        overflow-x: hidden; 
+        overflow-y: hidden;  
+    }
+    #smallGear1{
+        width: 30%;
+    }
+    #bigGear2{
+        width: 50%;
+    }
+    #form{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    input[type='text'], input[type='password']{
+        width: 78.75%;
+        height: 50px;
+        font-size: 18px;
+        border-radius: 6px;
+        padding-left: 10px;
+        border: none;
+    }
+    .icons{
+        position: relative;
+        left: 15px;
+        width: 21%;
+    }
+}
+@media screen and (max-width: 425px){
+    /* Mobile */
+      *{
+        margin: 0;
+        padding: 0;
+        overflow-y: scroll;  
+        overflow-x: hidden;  
+    }
+    .welcome {
+        font-size: 19px;
+    }
+    .flex{
+        max-width: 300px;
+        display: block;
+    }
+    .gears{
+        height: 260px;
+        position: relative;
+        bottom: 65px;
+        overflow-x: hidden; 
+        overflow-y: hidden;  
+    }
+    #smallGear1{
+        width: 30%;
+    }
+    #bigGear2{
+        width: 50%;
+    }
+    #form{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    input[type='text'], input[type='password']{
+        width: 78.75%;
+        height: 50px;
+        font-size: 18px;
+        border-radius: 6px;
+        padding-left: 10px;
+        border: none;
+    }
+    .icons{
+        position: relative;
+        left: 15px;
+        width: 21%
+    }
+}
