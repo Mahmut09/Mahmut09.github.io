@@ -31,7 +31,7 @@ let city = [];
 // Функции
 
 const getData = (url, callback) => {
-    const request = new XMLHttpRequest(url);
+    const request = new XMLHttpRequest();
     
     request.open('GET', url);
 
@@ -218,7 +218,6 @@ dropdownCitiesTo.addEventListener('click', (event) => {
 
 train.addEventListener('click', () => {
     modalComming.style.display = 'flex';
-    console.log('te');
 });
 
 bus.addEventListener('click', () => {

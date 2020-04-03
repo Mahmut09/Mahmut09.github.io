@@ -62,6 +62,18 @@ main{
 	margin-right: 2.5em;
 	width: 20%;
 	cursor: pointer;
+	border-radius: 6px;
+	padding: 5px;
+}
+.plane:hover {
+	font-size: 30px;
+	background-color: #00416A;
+	filter: drop-shadow(2px 4px 6px black);
+}
+.plane:hover img {
+	margin-left: 15px;
+	transform: rotateZ(-20deg);
+	max-width: 70px;
 }
 .bus {
 	margin-right: 0;
@@ -71,6 +83,34 @@ main{
 }
 .train img{
 	max-width: 55px;
+}
+#smoke {
+	position: relative;
+	bottom: 1.55em;
+	left: 2.65em;
+	opacity: 0;
+}
+.train:hover #smoke {
+	opacity: 1;
+	transition: 1s;
+}
+.train:hover {
+	font-size: 30px;
+	background-color: #00416A;
+	filter: drop-shadow(2px 4px 6px black);
+}
+.train:hover img {
+	margin-left: 5px;
+	max-width: 60px;
+}
+.bus:hover {
+	font-size: 30px;
+	background-color: #00416A;
+	filter: drop-shadow(2px 4px 6px black);
+}
+.bus:hover img {
+	max-width: 70px;
+	margin-left: 25px;
 }
 .wrapper_search, .wrapper_button {
 	display: -webkit-box;
