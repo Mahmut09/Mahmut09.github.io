@@ -1,0 +1,562 @@
+@font-face{
+    src: url('fonts/BIG JOHN.otf');
+    font-family: 'BIG JOHN'
+  }
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.15;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration: none;
+    -webkit-text-size-adjust: 100%;
+    transition: .3s;
+} 
+ul li{
+    display: inline;
+}
+a{
+    text-decoration: none;
+}
+.width{
+    width: 1024px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper{
+    margin: auto;
+}
+header{
+    background-image: url(../img/Layer\ 5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 755px;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 1024px;
+    height: 86px;
+    color: #626262;
+}
+.logo{
+    width: 34.9%;
+    font-size: 38px;
+    text-transform: uppercase;
+}
+.logo:hover{
+    font-size: 42px;
+    color: #06b5a9;
+}
+.logo:hover .green{
+    color: #626262;
+    font-size: 42px;
+}
+.nav-menu{
+    width: 60.6%;
+}
+.nav-menu li{
+    font-size: 18.5px;
+    text-transform: uppercase;
+    padding: 33px 18.5px;
+    z-index: 2;
+}
+.nav-menu li:hover{
+    background: #06b5a9;
+    color: white;
+    cursor: pointer;
+    border-bottom: 1.5px solid #7ebeba;
+}
+.price ul{
+    display: flex;
+    align-items: center;
+}
+.price li{
+    margin-right: 9px;
+    font-size: 24.5px;
+}
+.price li:last-child{
+    margin-left: 16px;
+    margin-right: 0;
+    margin-bottom: 8px;
+}
+.white-nav{
+    min-width: 1919.4px;
+    background: #f5f8f8e3;
+}
+.green{
+    color: #06b5a9;
+}
+.drop-down{
+    position: absolute;
+    left: 866px;
+    background: #06b5a9;;
+    width: 606px;
+    height: 299px;
+    text-align: center;
+    display: none;
+    z-index: 1;
+}
+.drop-down li{
+    display: block;
+}
+.drop-down-logo{
+    font-size: 38px;
+    text-transform: uppercase;
+    color: white;
+    width: 35.6%;
+}
+.drop-down-logo li{
+    margin-bottom: 62px;
+    border-bottom: 1px solid #7ebeba;
+    padding-bottom: 10px;
+}
+.drop-down-logo :last-child{
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+.pink{
+    color: #fec8cd;
+}
+.column a{
+    color: #bff2e1;
+    text-transform: capitalize;
+}
+.column li{
+    line-height: 32px;
+}
+.column a:hover{
+    color: white;
+    filter: drop-shadow(2px 4px 6px black);
+}
+.left-column{
+    width: 31.8%;
+    border-left: 1px solid #7ebeba;
+    border-right: 1px solid #7ebeba;
+}
+.right-column{
+    width: 32.6%;
+}
+.tagline{
+    width: 1024px;
+    margin: auto;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    top: 35%;
+}
+.tagline h2{
+    word-spacing: 30px;
+    font-size: 116px;
+}
+.tagline h3{
+    letter-spacing: 30px;
+    font-size: 22.5px;
+}
+.discounts{
+    margin-bottom: 47px;
+    margin-top: 40px;
+}
+.discounts-logo li, .discounts-content li{
+    display: block;
+    color: white;
+    font-size: 30.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.discounts-logo{
+    margin-bottom: 15px;
+}
+.discounts-content li{
+   font-size: 18.5px;
+}
+.discounts-content li:first-child{
+    font-size: 23px;
+}
+.discounts-content li:last-child{
+    font-size: 16.5px;
+}
+.box{
+    width: 245px;
+    height: 250px;
+    padding-top: 23px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.box:last-child{
+    padding-top: 37px;
+    padding-left: 14px;
+    cursor: default;
+}
+.activitee{
+    background: #58cddb;
+}
+.ampersan{
+    background: #e4ce9a;
+}
+.bally{
+    background: #f3a5c8;
+}
+.lets-go{
+    background: #f2ca66;
+}
+.discounts-product{
+    width: 151px;
+    height: 45px;
+    font-family: "Helvetica Neue";
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 32.39px;
+    text-transform: uppercase;
+}
+.pink{
+    color: #414049;
+}
+.blue{
+    color: #12867f;
+}
+.gold{
+    color: #65523d;
+}
+.blue img{
+    position: relative;
+    bottom: 190px;
+    left: 95px;
+    max-width: 120px;
+}
+.blue span{
+    position: relative;
+    top: 50%;
+    left: 5%;
+}
+.gold img{
+    position: relative;
+    width: 143px;
+    height: 184px;
+    bottom: 134px;
+    left: 72px;
+}
+.gold span{
+    position: relative;
+    top: 70%;
+    right: 5px;
+}
+.pink img{
+    position: relative;
+    width: 135px;
+    height: 159px;
+    bottom: 152px;
+    left: 53%;
+}
+.lets-go h3{
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 106px;
+    font-weight: 700;
+    line-height: 35.43px;
+    text-transform: uppercase;
+    transform: rotateX(180deg);
+    transition: .5s;
+}
+.lets-go:hover h3{
+    transform: rotateX(0deg);
+}
+#off{
+    /* Style for "OFF" */
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 42px 68px 27px 39px;
+}
+.lets-go-btn a{
+    /* Style for "lets go" */
+    color: #f2ca66;
+    font-family: "Helvetica Neue";
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 6.27px;
+    text-transform: uppercase;
+    background: white;
+    padding: 6px 16px 6px 15px;
+    margin-left: -14px;
+    border-radius: 4px;
+}
+.lets-go-btn{
+    transition: .4s;
+    width: 146px;
+}
+.lets-go-btn:hover{
+    filter: drop-shadow(2px 4px 6px black);
+}
+.lets-go-btn:hover a{
+    background: #ceac56;
+    color: white;
+}
+.first, .second{
+    display: flex;
+}
+.second{
+    display: none;
+}
+.rounds{
+    width: 199px;
+    height: 199px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #58dbd3;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+.rounds:hover{
+    background: #00ffee;
+    opacity: 1;
+}
+.rounds:visited{
+    background: #1d3f3d;
+}
+.arrows{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: -10em;
+}
+.t-left, .t-right{
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.t-left{
+    right: 20%;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+}
+.t-left::after{
+    content: ''; 
+    position: absolute;
+    border: 20px solid transparent;
+    border-right: 20px solid #50b6b3;
+    border-radius: 5px;
+    left: 15%;
+    opacity: 1;
+}
+.t-right{
+    left: 20%;
+}
+.t-right::after{
+    content: ''; 
+    position: absolute;
+    border: 20px solid transparent;
+    border-left: 20px solid #50b6b3;
+    border-radius: 5px;
+    right: 15%;
+}
+.light{
+    margin-right: -30px;
+    opacity: .9;
+}
+.dark{
+    opacity: 0.4;
+    margin-right: -30px;
+}
+.lower{
+    top: 25px;
+}
+.upper{
+    bottom: 25px;
+}
+.categories{
+    background: url(..//img/2-layers.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.categories h2{
+    padding-top: 106px;
+    margin-bottom: 73px;
+    text-align: center;
+    height: 186px;
+    color: #ffffff;
+    font-family: "Josefin Slab";
+    font-size: 116px;
+    font-weight: 400;
+    line-height: 19.72px;
+    text-transform: uppercase;
+}
+.levis-logo{
+    margin-top: -16.5px;
+    margin-bottom: 50px;
+}
+.levis-logo::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 0 0 16px;
+    border-color: transparent transparent transparent #6c000a;
+    transform: rotateZ(7deg);
+    left: 47.31em;
+}
+.levis-logo::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 16px 16px;
+    border-color: transparent transparent #6c000a;
+    left: 24.67em;
+    transform: rotateZ(-2deg);
+}
+.buy{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.btn-cart{
+    width: 215px;
+    height: 48px;
+    background: #d62132;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: left;
+}
+.btn-cart:hover::after{
+    content: " .";
+    min-height: 370px;
+    background: #d62132;
+    color: #d62132;
+    position: relative;
+    bottom: 12.4em;
+    border-bottom: 5px solid white;
+    border-radius: 100px;
+    transition: 0s;
+    filter: drop-shadow(2px 4px 6px black);
+}
+.btn-cart:hover::before{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 0px 30px 55px;
+    border-color: transparent transparent transparent #d62132;
+    top: -21.8em;
+    left: 9.2em;
+    transform: rotateZ(180deg);
+    transition: 0s;
+    filter: drop-shadow(2px 4px 6px black);
+}
+.btn-cart a{
+    text-decoration: none;
+    vertical-align: middle;
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 19.72px;
+    padding-bottom: 5px;
+}
+.btn-cart img{
+    width: 29px;
+    height: 26px;
+}
+.btn-cart:hover{
+    transform: rotate3d(1, 1, 1, -10deg);
+    filter: drop-shadow(2px 4px 6px black);
+}
+.tablink {
+    margin-top: 50px;
+    border: 0;
+}
+.tablink button{
+    border: 0;
+}
+.tablink img{
+    width: 178px;
+    height: 170px;
+    cursor: pointer;
+}
+.tablink:hover img{
+    position: relative;
+    filter: drop-shadow(2px 4px 6px black);
+    bottom: 10px;
+}
+.tabcontent h4{
+    min-width: 518px;
+    min-height: 37px;
+    color: #1d1d1d;
+    font-family: "Helvetica Neue";
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 19.72px;
+    margin-bottom: 24px;
+}
+.tabcontent p{
+    width: 543px;
+    height: 95px;
+    color: #1d1d1d;
+    font-family: "Helvetica Cyr - Upright";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.levis-cost h5{
+    width: 213px;
+    height: 33px;
+    color: #1d1d1d;
+    font-family: "Helvetica Neue";
+    font-size: 36px;
+    font-weight: 500;
+}
+.levis-cost span{
+    font-weight: 700;
+}
+.tablinks{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 95px;
+}
+footer{
+    background: #1b2330;
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.72px;
+    padding-bottom: 15px;
+}
+footer p{
+    opacity: 0.5;
+}
+.footer{
+    color: #626262;
+}
+.soc{
+    margin-top: -45px;
+}
+.soc li{
+    margin-right: 37px;
+}
+.soc li:last-child{
+    margin-right: 0;
+}
+.soc li:hover{
+    filter: contrast(0.5);
+}
