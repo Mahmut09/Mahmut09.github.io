@@ -857,7 +857,33 @@ button {
         margin-right: 0;
     }
     
-    .modal-auth {
-        left: -27px;
+    .label-auth {
+        margin: 20px 10px;
+    }
+
+    .modal-dialog {
+        padding: 40px 5px;
+    }
+
+    .button-primary {
+        margin-right: 18px;
+    }
+
+    .modal-header {
+        margin-bottom: 25px;
+    }
+
+    .footer-buttons {
+        flex-direction: column-reverse;
+    }
+
+    .footer-buttons-cart {
+        height: 105px;
+        justify-content: space-around;
+    }
+
+    .order {
+        margin-right: 0;
+        width: 168px;
     }
 }
