@@ -23,7 +23,7 @@
 			</label>
 			<div class="buttons">
 				<span class="user-name"></span>
-				<button class="button button-primary button-auth">
+				<button class="button button-primary button-auth mr">
 					<span class="button-auth-svg"></span>
 					<span class="button-text" id="btn">Войти</span>
 				</button>
@@ -136,52 +136,13 @@
 			</div>
 			<!-- /.modal-header -->
 			<div class="modal-body">
-				<div class="food-row">
-					<span class="food-name">Ролл угорь стандарт</span>
-					<strong class="food-price">250 ₽</strong>
-					<div class="food-counter">
-						<button class="counter-button">-</button>
-						<span class="counter">1</span>
-						<button class="counter-button">+</button>
-					</div>
-				</div>
-				<!-- /.foods-row -->
-				<div class="food-row">
-					<span class="food-name">Ролл угорь стандарт</span>
-					<strong class="food-price">250 ₽</strong>
-					<div class="food-counter">
-						<button class="counter-button">-</button>
-						<span class="counter">1</span>
-						<button class="counter-button">+</button>
-					</div>
-				</div>
-				<!-- /.foods-row -->
-				<div class="food-row">
-					<span class="food-name">Ролл угорь стандарт</span>
-					<strong class="food-price">250 ₽</strong>
-					<div class="food-counter">
-						<button class="counter-button">-</button>
-						<span class="counter">1</span>
-						<button class="counter-button">+</button>
-					</div>
-				</div>
-				<!-- /.foods-row -->
-				<div class="food-row">
-					<span class="food-name">Ролл угорь стандарт</span>
-					<strong class="food-price">250 ₽</strong>
-					<div class="food-counter">
-						<button class="counter-button">-</button>
-						<span class="counter">1</span>
-						<button class="counter-button">+</button>
-					</div>
-				</div>
-				<!-- /.foods-row -->
+				
 			</div>
 			<!-- /.modal-body -->
 			<div class="modal-footer">
-				<span class="modal-pricetag">1250 ₽</span>
-				<div class="footer-buttons">
-					<button class="button button-primary">Оформить заказ</button>
+				<span class="modal-pricetag"></span>
+				<div class="footer-buttons footer-buttons-cart">
+					<button class="button button-primary order">Оформить заказ <span class="empty-cart">Сначало добавьте еды в корзину!</span> </button>
 					<button class="button clear-cart">Отчистить корзину</button>
 				</div>
 			</div>
@@ -208,7 +169,7 @@
 				<!-- /.modal-body -->
 				<div class="modal-footer">
 					<div class="footer-buttons">
-						<button class="button button-primary button-login" type="submit">Войти</button>
+						<button class="button button-primary button-login mr" type="submit">Войти</button>
 					</div>
 				</div>
 			</form>
@@ -216,8 +177,65 @@
 		</div>
 		<!-- /.modal-dialog -->
 	</div>
+
+	<div class="modal-order">
+		<div class="modal-dialog modal-dialog-order">
+			<button class="close-order">&times;</button>
+			<form>
+				<fieldset class="modal-body">
+					<legend class="modal-title cart-title">Оформление заказа</legend>
+					<label class="label-order label-order-cart">
+						<span>Улица | Номер дома</span>
+						<div class="inputs">
+							<input id="order-address-street" type="text" autocomplete="off" placeholder="Абая">
+							<input id="order-address-home" type="text" autocomplete="off" placeholder="10">
+						</div>
+					</label>
+					<label class="label-order label-order-cart">
+						<span>Подъезд | Этаж</span>
+						<div class="inputs">
+							<input id="order-porch" type="text" autocomplete="off" placeholder="3">
+							<input id="order-floor" type="text" autocomplete="off" placeholder="5">
+						</div>
+					</label> 
+					<label class="label-order label-order-cart">
+						<div class="inputs">
+							<span>Номер квартиры</span>
+							<input id="order-flat-number" type="text" autocomplete="off" placeholder="40">
+							</div>
+					</label> 
+				</fieldset>
+				<!-- /.modal-body -->
+				<div class="modal-footer">
+					<div class="footer-buttons">
+						<button class="button button-primary button-order" type="submit">Заказать</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="modal modal-thanks modal-thanks-close">
+		<div class="modal-dialog">
+			<div class="modal-header thanks">
+				<h2>Спасибо за заказ!</h2>
+				<button class="close close-thanks">&times;</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/icon/thnaks.svg" class="done" alt="#">
+				<h4>Ваш заказ скоро доставят</h4>
+			</div>
+			<div class="modal-footer">
+				<div class="footer-buttons">
+					<button class="button button-primary button-thanks" type="submit">На главную</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 	<script src="js/main.js"></script>
+	
 </body>
 
 </html>
