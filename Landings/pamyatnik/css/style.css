@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+.telephone-number {
+    margin-right: 5em;
+    font-size: 18px;
+}
+
+.telephone-number a {
+    color: #fff;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -693,5 +702,9 @@ button:focus {
 @media (max-width: 378px) {
     header {
         height: 96px;
+    }
+
+    .telephone-number {
+        margin-top: 15px;
     }
 }
