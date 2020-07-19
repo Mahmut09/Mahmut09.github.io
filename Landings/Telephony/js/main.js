@@ -36,11 +36,29 @@ const toggleLoginModal = () => {
   modalLogin.classList.toggle('is-open');
 }
 
+const closeModal = (event) => {
+  const target = event.target;
+
+  if (target === giftModal) {
+    toggleGiftModal();
+  }
+}
+
+const closeLogin = (event) => {
+  const target = event.target;
+
+  if (target === modalLogin) {
+    toggleLoginModal();
+  }
+}
+
 personalArea.addEventListener('click', toggleLoginModal);
 loginClose.addEventListener('click', toggleLoginModal);
+modalLogin.addEventListener('click', closeLogin);
 
 giftBtn.addEventListener('click', toggleGiftModal);
 closeGiftModal.addEventListener('click', toggleGiftModal);
+giftModal.addEventListener('click', closeModal);
 
 collapseLi6.addEventListener('click', () => {
   collapseOne7.classList.remove('show');
