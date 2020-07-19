@@ -184,7 +184,7 @@ header {
 }
 
 .block-title {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 .block-title h2 {
@@ -299,6 +299,13 @@ header {
     margin-bottom: 40px;
 }
 
+.how-much h2 {
+    font: 52px 'Exo 2', sans-serif;
+    color: #586983;
+    font-weight: bold;
+    padding-bottom: 76px;
+}
+
 .how-much-triangle {
     position: relative;
 }
@@ -313,6 +320,10 @@ header {
     width: 31.57%;
     background: #fff;
     position: relative;
+}
+
+.card-content-ul {
+    padding-left: 0 !important;
 }
 
 .card-content-ul li {
@@ -336,7 +347,7 @@ header {
 
 .card-span {
     color: #585858;
-    font: 16px 'Proxima';
+    font: 15px 'Proxima';
     font-weight: lighter;
 }
 
@@ -405,6 +416,10 @@ a:active {
     padding-left: 50px;
 }
 
+.panel-body ul {
+    padding-left: 0 !important;
+}
+
 .down-a {
     position: relative;
     color: #586983 !important;
@@ -459,7 +474,6 @@ a:active {
     justify-content: center;
     align-items: center;
     margin-left: 15px;
-    padding-bottom: 100px;
 }
 
 .rates button {
@@ -804,6 +818,16 @@ footer {
 #individ-test {
     background: linear-gradient(90deg, rgba(242,184,8,1) 0%, rgba(248,164,4,1) 50%, rgba(255,143,0,1) 100%);
     cursor: pointer;
+    transition: .5s;
+}
+
+.orng-btn {
+    transition: .3s;
+}
+
+.orng-btn:hover {
+    color: #fff;
+    filter: hue-rotate(-30deg);
 }
 
 .gift-btn {
@@ -819,10 +843,12 @@ footer {
     position: absolute;
     top: 40%;
     transform: rotate(-90deg) translate(0, -161%);
+    transition: .5s;
 }
 
 .gift-btn:hover {
     color: #fff;
+    filter: hue-rotate(-30deg);
 }
 
 .modal {
@@ -1044,6 +1070,11 @@ footer {
     border-radius: 30px;
     border: 0;
     padding: 20px 40px;
+}
+.login-inp:active, .login-inp:hover, .login-inp:focus {
+    outline: 0;
+    outline-offset: 0;
+    padding-left: 15px;
 }
 
 #login {
