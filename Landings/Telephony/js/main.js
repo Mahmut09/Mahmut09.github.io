@@ -1,6 +1,13 @@
 const incomingCalls = document.querySelector('.incoming-calls'),
       control = document.querySelector('.control'),
-      others = document.querySelector('.others');
+      others = document.querySelector('.others'),
+      giftModal = document.querySelector('.gift-modal'),
+      giftBtn = document.querySelector('.gift-btn'),
+      closeGiftModal = document.querySelector('.close-modal'),
+      modalLogin = document.querySelector('.modal-login'),
+      personalArea = document.querySelector('.personal-area'),
+      loginClose = document.querySelector('.login-close'),
+      headerOnScroll = document.querySelector('.header-on-scroll');
 
 const incomingContent = document.getElementById('incoming-content'),
       controlContent = document.getElementById('control-content'),
@@ -21,6 +28,19 @@ const incomingContent = document.getElementById('incoming-content'),
       collapseOne10 = document.getElementById('collapseOne10'),
       collapseOne11 = document.getElementById('collapseOne11');
 
+const toggleGiftModal = () => {
+  giftModal.classList.toggle('is-open');
+}
+
+const toggleLoginModal = () => {
+  modalLogin.classList.toggle('is-open');
+}
+
+personalArea.addEventListener('click', toggleLoginModal);
+loginClose.addEventListener('click', toggleLoginModal);
+
+giftBtn.addEventListener('click', toggleGiftModal);
+closeGiftModal.addEventListener('click', toggleGiftModal);
 
 collapseLi6.addEventListener('click', () => {
   collapseOne7.classList.remove('show');
@@ -118,3 +138,55 @@ $(document).ready(function() {
       $(a.target).prev('.panel-heading').removeClass('active');
     });
 });
+
+
+
+
+var cbpAnimatedHeader = (function() {
+      var docElem = document.documentElement,
+
+
+          didScroll = false,
+
+          changeHeaderOn = 300;
+      function init() {
+
+          window.addEventListener( 'scroll', function( event ) {
+
+              if( !didScroll ) {
+
+                  didScroll = true;
+
+                  setTimeout( scrollPage, 250 );
+
+              }
+
+          }, false );
+
+      }
+
+      function scrollPage() {
+
+          var sy = scrollY();
+
+        if (sy > 840) {
+          headerOnScroll.style.opacity = '1'
+        } else {
+          headerOnScroll.style.opacity ='';
+        }
+        
+          didScroll = false;
+        
+
+      }
+
+      function scrollY() {
+
+          return window.pageYOffset || docElem.scrollTop;
+
+      }
+
+      init();
+
+  })();
+  
