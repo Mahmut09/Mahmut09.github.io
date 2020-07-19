@@ -731,6 +731,8 @@ a:active {
 .answers {
     box-shadow: none !important;
     padding: 20px 0 0 5px !important;
+    display: flex;
+    align-items: center;
 }
 
 .answers img {
