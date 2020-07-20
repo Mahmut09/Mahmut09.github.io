@@ -7,12 +7,21 @@ const incomingCalls = document.querySelector('.incoming-calls'),
       modalLogin = document.querySelector('.modal-login'),
       personalArea = document.querySelector('.personal-area'),
       loginClose = document.querySelector('.login-close'),
-      headerOnScroll = document.querySelector('.header-on-scroll');
+      headerOnScroll = document.querySelector('.header-on-scroll'),
+      thanksModal = document.querySelector('.thanks-modal'),
+      thanksClose = document.querySelector('.thanks-close'),
+      callbackModal = document.querySelector('.callback-modal'),
+      callbackClose = document.querySelector('.callback-close'),
+      modalCallbackBtn = document.querySelector('.modal-callback-btn'),
+      consultationModal = document.querySelector('.consultation-modal'),
+      consultationClose = document.querySelector('.consultation-close'),
+      modalconsultationBtn = document.querySelector('.modal-consultation-btn');
 
 const incomingContent = document.getElementById('incoming-content'),
       controlContent = document.getElementById('control-content'),
       otherContent = document.getElementById('other-content'),
       accordion = document.getElementById('accordion'),
+      takeGiftBtn = document.getElementById('take-gift-btn'),
 
       collapseLi6 = document.getElementById('collapse-li6'),
       collapseLi7 = document.getElementById('collapse-li7'),
@@ -20,6 +29,13 @@ const incomingContent = document.getElementById('incoming-content'),
       collapseLi9 = document.getElementById('collapse-li9'),
       collapseLi10 = document.getElementById('collapse-li10'),
       collapseLi11 = document.getElementById('collapse-li11'),
+      choose1 = document.getElementById('choose1'),
+      choose2 = document.getElementById('choose2'),
+      choose3 = document.getElementById('choose3'),
+      consultation1 = document.getElementById('consultation1'),
+      consultation2 = document.getElementById('consultation2'),
+      consultation3 = document.getElementById('consultation3'),
+      consultation4 = document.getElementById('consultation4'),
       
       collapseOne6 = document.getElementById('collapseOne6'),
       collapseOne7 = document.getElementById('collapseOne7'),
@@ -52,6 +68,56 @@ const closeLogin = (event) => {
   }
 }
 
+const showGiftThanks = () => {
+  toggleGiftModal();
+
+  thanksModal.classList.add('is-open');
+}
+
+const hideThanksModal = () => {
+  thanksModal.classList.toggle('is-open');
+}
+
+const closeThanksModal = (event) => {
+  if (event.target === thanksModal) {
+    hideThanksModal();
+  }
+}
+
+const openCallbackModal = () => {
+  callbackModal.classList.toggle('is-open');
+}
+
+const showThanksCallback = () => {
+  openCallbackModal();
+
+  thanksModal.classList.add('is-open');
+}
+
+const closeCallback = (event) => {
+    if (event.target === callbackModal) {
+      openCallbackModal();
+    }
+}
+
+
+const openConsultationModal = () => {
+  consultationModal.classList.toggle('is-open');
+}
+
+const closeConsultation = (event) => {
+  if (event.target === consultationModal) {
+    openConsultationModal();
+  }
+}
+
+const showThanksConsultation = () => {
+  openConsultationModal();
+
+  thanksModal.classList.add('is-open');
+}
+
+
 personalArea.addEventListener('click', toggleLoginModal);
 loginClose.addEventListener('click', toggleLoginModal);
 modalLogin.addEventListener('click', closeLogin);
@@ -59,6 +125,28 @@ modalLogin.addEventListener('click', closeLogin);
 giftBtn.addEventListener('click', toggleGiftModal);
 closeGiftModal.addEventListener('click', toggleGiftModal);
 giftModal.addEventListener('click', closeModal);
+takeGiftBtn.addEventListener('click', showGiftThanks);
+thanksClose.addEventListener('click', hideThanksModal);
+thanksModal.addEventListener('click', closeThanksModal);
+
+
+choose1.addEventListener('click', openCallbackModal);
+choose2.addEventListener('click', openCallbackModal);
+choose3.addEventListener('click', openCallbackModal);
+
+consultation1.addEventListener('click', openConsultationModal);
+consultation2.addEventListener('click', openConsultationModal);
+consultation3.addEventListener('click', openConsultationModal);
+consultation4.addEventListener('click', openConsultationModal);
+
+consultationClose.addEventListener('click', openConsultationModal);
+consultationModal.addEventListener('click', closeConsultation);
+modalconsultationBtn.addEventListener('click', showThanksConsultation);
+
+callbackClose.addEventListener('click', openCallbackModal);
+modalCallbackBtn.addEventListener('click', showThanksCallback);
+callbackModal.addEventListener('click', closeCallback);
+
 
 collapseLi6.addEventListener('click', () => {
   collapseOne7.classList.remove('show');

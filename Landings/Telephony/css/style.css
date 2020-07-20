@@ -852,7 +852,7 @@ footer {
 }
 
 .modal {
-    background-color: #333333a6;
+    background-color: #141414a6;
 }
 
 .modal-wrapper {
@@ -953,6 +953,22 @@ footer {
     transform: rotateY(180deg);
 }
 
+#cbx5 {
+    display: none;
+}
+
+#cbx5:checked + .cbx .flip {
+    transform: rotateY(180deg);
+}
+
+#cbx6 {
+    display: none;
+}
+
+#cbx6:checked + .cbx .flip {
+    transform: rotateY(180deg);
+}
+
 .front,
 .back {
   backface-visibility: hidden;
@@ -1011,7 +1027,8 @@ footer {
 
 .my-modal-footer {
     background-image: url(../img/header-bg1.png);
-    background-size: cover;
+    background-size: contain;
+    
     padding: 20px 3em;
 }
 
@@ -1077,7 +1094,12 @@ footer {
     padding-left: 15px;
 }
 
-#login {
+.get-consultation:active, .get-consultation:hover, .get-consultation:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+#login, #login1, #login2 {
     margin-bottom: 20px;
 }
 
@@ -1160,6 +1182,78 @@ footer {
 
 .rate-btn {
     z-index: 9;
+}
+
+.thanks-footer {
+    color: #fff;
+    font: 28px 'Exo 2', sans-serif;
+    padding: 2em 2em;
+    line-height: 1.3em;
+}
+
+.callback-wrapper {
+    width: 500px;
+}
+
+.callback-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 4em;
+    border-radius: 30px;
+}
+
+.callback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-title h3 {
+    color: #fff;
+    font: 28px 'Exo 2', sans-serif;
+    margin-bottom: 30px;
+}
+
+.modal-callback-btn {
+    width: 97%;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+.consultation-wrapper {
+    width: 500px;
+}
+
+.consultation-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 4em;
+    border-radius: 30px;
+}
+
+.consultation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-title h3 {
+    color: #fff;
+    font: 28px 'Exo 2', sans-serif;
+    margin-bottom: 30px;
+}
+
+.modal-consultation-btn {
+    width: 97%;
+    box-shadow: none;
+    margin-bottom: 0;
+    background: linear-gradient(90deg, rgba(242,184,8,1) 0%, rgba(248,164,4,1) 50%, rgba(255,143,0,1) 100%);
+}
+
+.modal-consultation-btn:hover {
+    filter: hue-rotate(-30deg);
 }
 
 @media (max-width: 1808px) {
