@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>My-syte</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-dark">
+
+        <a class="navbar-brand" href="index.html"><img src="img/love-m-text-heart-red.png" alt="Developer Logo, Web Developer Logo , Front End Developer Logo, Создать сайт"></a>
+        
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" id="home" href="index.html">
+                <i class="fas fa-home " id="icon-home"></i>
+                <span class="icon-text-home">home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="about" href="about.html">
+                <i class="fas fa-user " id="icon-about"></i>
+                <span class="icon-text-about">about</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="skills" href="skills.html">
+                <i class="fas fa-cog" id="icon-skills"></i>
+                <span class="icon-text-skills">skills</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="works" href="works.html">
+                <i class="fas fa-eye" id="icon-works"></i>
+                <span class="icon-text-works">works</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact" href="#">
+                <i class="fas fa-envelope active" id="icon-contact"></i>
+                <span class="icon-text-contact">contact</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="soc">
+            <li><a href="https://web.telegram.org/#/im?p=@EXCOMMUNlCODE" title="Telegram" target="_blank"><i class="fa fa-telegram"></i></a></li>
+            <li><a href="https://vk.com/im?sel=186520414" target="_blank" title="VKontakte"><i class="fa fa-vk"></i></a></li>
+            <li><a href="https://www.instagram.com/mahmut__09/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://wa.me/77755878785" target="_blank" title="Whatsapp"><i class="fa fa-whatsapp"></i></a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="set">
+            <div class="wrapper aboute-wrapper">
+                <span class="tags top-tags">&lt;html&gt;<br> &nbsp;&nbsp;&nbsp;&lt;body&gt; </span>
+                
+
+                <div class="text-zone pages-text-zone text-tags contact-text-zone">
+                    <h1 id="about-me" class="blue-text">
+                        <span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span> <span>m</span><span>e</span>
+                    </h1>
+
+                    <div class="text-zone-p">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet nemo quam reiciendis! Reprehenderit nobis odit at nulla minima quis quidem enim est, hic ducimus facere ab doloribus.
+                        </p>
+                    </div>
+
+                    <form action="#" class="contact">
+
+                        <fieldset class="name-email">
+                            <input type="text" name="name" placeholder="Name">
+                            <input type="email" name="email" placeholder="E-mail">
+                        </fieldset>
+                        <input type="text" name="subject" placeholder="Subject">
+                        <textarea name="Message" placeholder="Message" id="" cols="50" rows="7"></textarea>
+
+                        <button type="submit" class="btn send-btn">Send</button>
+
+                    </form>
+
+                </div>
+
+                <span class="tags bottom-tags"> &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br> &lt;/html&gt; </span>
+
+            </div>
+        </div>
+
+        <!-- <iframe src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDEWnl27KviCyBU6oyOcNZ9TFHn8pHWSS4&center=49.90341818870244,93.76249612918424&zoom=3&format=png&maptype=roadmap&style=feature:administrative%7Celement:geometry.fill%7Cvisibility:off&style=feature:administrative%7Celement:labels.text%7Ccolor:0x000000%7Cweight:0.5&style=feature:administrative.neighborhood%7Cvisibility:off&style=feature:administrative.province%7Cvisibility:off&style=feature:landscape%7Celement:geometry.fill%7Ccolor:0x08fdd8&style=feature:landscape%7Celement:geometry.stroke%7Cvisibility:off&style=feature:poi%7Cvisibility:simplified&style=feature:poi%7Celement:labels.text%7Cvisibility:off&style=feature:road%7Cvisibility:off&style=feature:road%7Celement:labels%7Cvisibility:off&style=feature:road%7Celement:labels.icon%7Cvisibility:off&style=feature:transit%7Cvisibility:off&style=feature:water%7Ccolor:0x1d1d1d&style=feature:water%7Celement:labels.text%7Ccolor:0xffffff&size=480x360" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+    </main>
+
+    <div class="preloader">
+        <div class="dash uno"></div>
+        <div class="dash dos"></div>
+        <div class="dash tres"></div>
+        <div class="dash cuatro"></div>
+    </div>
+
+    <script>
+        const set = document.querySelector('.set');
+        set.style.display = 'none';
+
+        const show = () => {
+            set.style.display = 'block';
+        }
+        setTimeout(show, 2000);
+
+    </script>
+
+<script src="https://kit.fontawesome.com/475833b573.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
