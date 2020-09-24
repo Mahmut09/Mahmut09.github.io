@@ -672,6 +672,7 @@ input[name='subject'] {
     top: 50%;
     transform: translate(0, -50%);
     text-align: center;
+    overflow-y: hidden;
 }
 
 .sorry span {
