@@ -922,7 +922,7 @@ input[name='subject'] {
     }
 
     .time-line {
-        padding-right: 35px;
+        padding: 0 35px 40px 0;
     }
 
     .time-line img {
@@ -930,7 +930,11 @@ input[name='subject'] {
     }
 
     .time-line::before {
-        top: 58%;
+        top: 70%;
+    }
+
+    .time-line::after {
+        top: 94%;
     }
 
     .sphere-content {
