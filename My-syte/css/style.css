@@ -984,6 +984,7 @@ input[name='subject'] {
 
     .send-btn {
         font-size: 14px;
+        left: 68%;
     }
 
     .hex-container {
