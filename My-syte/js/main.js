@@ -27,7 +27,7 @@ const load = () => {
     loader.style.display = 'none';
 }
 
-setTimeout(load, 1700);
+setTimeout(load, 170);
 
 
 home.addEventListener('mouseover', () => {

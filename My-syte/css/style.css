@@ -651,6 +651,37 @@ input[name='subject'] {
     animation-delay: .4s;
 }
 
+#bg-img {
+    background-color: #1d1d1d;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+    display: none;
+}
+
+.sorry {
+    display: none;
+    position: absolute;
+    font-family: 'VerdanaBold';
+    font-size: 20px;
+    color: #fff;
+    z-index: 9;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+}
+
+.sorry span {
+    font-size: 28px;
+}
+
+.sorry a {
+    text-decoration: underline;
+}
+
 @keyframes spin {
     0% {
       transform: rotate(0deg);
@@ -962,5 +993,10 @@ input[name='subject'] {
     .dash {
         left: 24%;
     }
+
+    #bg-img {
+        display: block;
+    }
+
 
 }

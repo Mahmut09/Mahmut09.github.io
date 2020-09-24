@@ -15,7 +15,17 @@
     <meta property="og:image" content="img/dark-logo.png">
 </head>
 <body>
+
     
+    <canvas id="bg-img"></canvas>
+    <div class="sorry">
+        <span class="blue-text">УПС</span> &nbsp; : ( <br>
+        Cтраница временно не доступна.
+        Посмотреть работы можно <a href="#" class="blue-text">тут</a> ←
+    </div>
+
+    <audio id="rain" src="css/audio/rain.mp3"  loop></audio>
+
     <nav class="navbar navbar-dark">
 
         <a class="navbar-brand" href="#"><img src="img/love-m-text-heart-red.png" alt="Developer Logo, Web Developer Logo , Front End Developer Logo, Создать сайт"></a>
@@ -607,11 +617,26 @@
     });
     </script>
 
+    <style>
+        @media (max-width: 425px) {
+            main {
+                display: none;
+            }
+
+            .sorry {
+                display: block;
+            }
+        }
+    </style>
+
 <script src="https://kit.fontawesome.com/475833b573.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
+
+<script src="https://atuin.ru/demo/TweenMax.min.js"></script>
+<script src="js/rain.js"></script>
 
 </body>
 </html>
