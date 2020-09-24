@@ -2,7 +2,7 @@ let n = 100,
 c = document.getElementById("bg-img"),
 ctx = c.getContext("2d"),
 cw = (c.width = c.offsetWidth);
-ch = (c.height = 1000);
+ch = (c.height = window.innerHeight);
 duration = ch/850,    
 img = new Image(),
 particles = [],
