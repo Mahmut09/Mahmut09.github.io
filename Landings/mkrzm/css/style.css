@@ -1,0 +1,274 @@
+/* font-family: 'Montserrat', sans-serif; */
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+.main, .header, .footer, .stock {
+    width: 63.56%;
+}
+
+.header-wrapper {
+    background-color: #d6d8d9;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: 750px;
+    background-position: 100% -40%;
+}
+
+.tagline h1 {
+    font-size: 80px;
+    padding: 1.5em 0 0.5em;
+    line-height: .7em;
+    font-family: 'Montserrat', sans-serif;
+    color: #373739;
+}
+
+.tagline span {
+    font-size: 45px;
+    font-weight: normal;
+}
+
+.btn {
+    width: 170px;
+    height: 60px;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: #3285cc;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+
+.advantage {
+    padding: 3em 0 4em;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+}
+
+.advantage li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #373739;
+}
+
+.advantage img {
+    width: 70px;
+    padding-right: 5px;
+}
+
+.heading {
+    font-size: 44px;
+    font-family: 'Montserrat', sans-serif;
+    color: #373739;
+    padding: 1.5em 0;
+}
+
+.card {
+    position: relative;
+}
+
+.goods-name {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.goods-size {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #373739;
+    padding: 0.3em 0 1em;
+}
+
+.goods-price {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-weight: bolder;
+}
+
+.card-btn {
+    width: 120px;
+    height: 35px;
+    font-size: 18px;
+    margin: 1.5em 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-column-gap: 8.4em;
+    grid-row-gap: 3em;
+}
+
+.card img {
+    width: 300px;
+    height: 190px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; 
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    background-color: #3285cc;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    padding: 2em 1em;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6em;
+}
+
+.payment-and-delivery h3 {
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    color: #373739;
+    padding: 2em 0;
+}
+
+.pay-del-ul {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3em;
+}
+
+.pay-del-ul li {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #373739;
+    width: 200px;
+    text-align: center;
+}
+
+.pay-del-ul img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.footer-wrapper {
+    background-color: #373739;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em 0 1.5em;
+}
+
+.logo {
+    flex: 1;
+}
+
+.contact {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: rgb(185, 184, 184);
+    display: flex;
+    justify-content: space-around;
+    line-height: 2em;
+    flex: 3;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.soc {
+    display: flex;
+    flex: 1;
+}
+
+.soc img {
+    width: 38px;
+}
+
+.stock-wrapper {
+    background-color: #3285cc;
+    height: 400px;
+	position: relative;
+	overflow: hidden;
+    display: flex;
+}
+
+.stock {
+    position: absolute;
+	background-image: url(../img/truck.png);
+	background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 110%;
+	width: 110%;
+	height: 110%;
+	transition: all 0.1s ease;
+
+}
+
+.stock-btn {
+    background-color: #fbac3b;
+    color: #373739;
+    width: 220px;
+    height: 80px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+}
+
+.stock-wrapper h3 {
+    font-size: 44px;
+    font-family: 'Montserrat', sans-serif;
+    color: #373739;
+    line-height: 1em;
+    margin-bottom: 1.5em;
+}
+
+.stock-text {
+    width: 63.56%;
+    padding: 3em 0;
+}
+
+.stock span {
+    font-size: 22px;
+}
