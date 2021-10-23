@@ -278,7 +278,7 @@ li {
     font-size: 22px;
 }
 
-@media (max-width: 375px) {
+@media only screen and (max-device-width : 428px) {
     * {
         overflow-x: hidden;
     }
