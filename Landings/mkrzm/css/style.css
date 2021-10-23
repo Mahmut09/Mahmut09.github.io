@@ -45,6 +45,11 @@ li {
     color: #fff;
     border: 0;
     cursor: pointer;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    filter: brightness(0.8);
 }
 
 .advantage {
@@ -271,4 +276,163 @@ li {
 
 .stock span {
     font-size: 22px;
+}
+
+@media (max-width: 375px) {
+    * {
+        overflow-x: hidden;
+    }
+    
+    .main, .header, .footer, .stock {
+        max-width: 320px;
+        width: 100%;
+        padding-left: 7px;
+    }
+
+    .header-wrapper {
+        background-size: 180px;
+        background-position: 110% 40px;
+    }
+
+    .tagline h1 {
+        font-size: 32px;
+        padding: 0.5em 0;
+    }
+
+    .tagline span {
+        font-size: 16px;
+        position: relative;
+    }
+
+    .tagline span::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        border-bottom: 1px solid #fbac3b;
+        bottom: -4px;
+        left: 0;
+    }
+
+    .btn {
+        width: 110px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .advantage {
+        padding: 5em 0 3em;
+        grid-template-columns: auto;
+        grid-row-gap: 1.2em;
+    }
+
+    .advantage li {
+        font-size: 16px;
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    .advantage img {
+        max-width: 40px;
+        margin: 0;
+        margin-right: 5px;
+    }
+
+    .heading {
+        font-size: 28px;
+        padding: .5em 0;
+    }
+
+    .cards {
+        grid-template-columns: auto;
+        padding-bottom: 2em;
+    }
+
+    .card img {
+        width: 250px;
+        height: 180px;
+    }
+
+    .goods-name {
+        padding-top: 0;
+    }
+
+    .goods-price {
+        display: inline-block;
+    }
+
+    .card-btn {
+        margin: 0em 50px 1em;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .stock {
+        background-size: 270px;
+        ;
+        background-position: 110% 90%;
+        width: 100%;
+        max-width: 100%;
+        }
+
+    .stock-text {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .stock-text h3 {
+        font-size: 30px;
+        overflow-y: hidden;
+        padding-left: 3px;
+        margin-bottom: .7em;
+    }
+
+    .stock-text span {
+        font-size: 14px;
+        position: relative;
+    }
+
+    .stock-text span::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        border-bottom: 1px solid #fbac3b;
+        bottom: -4px;
+        left: 0;
+    }
+
+    .pay-del-ul li {
+        line-height: 1.5em;
+        font-size: 12px;
+    }
+
+    .pay-del-ul img {
+        width: 40px;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+        padding: 1em 0;
+    }
+
+    .soc {
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+    }
+
+    .contact {
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+        margin: .5em 0 .5em 0;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
 }
