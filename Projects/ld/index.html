@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>LD</title>
+</head>
+<body>
+    <form class="decor" id="form" action="telegram.php" method="POST" enctype="multipart/form-data">
+        <div class="form-left-decoration"></div>
+        <div class="form-right-decoration"></div>
+        <div class="circle"></div>
+        <div class="form-inner">
+        <h3>Статус доставки</h3>
+        <input class="form-input" id="car" type="text" placeholder="* Номер машины" name="car_number">
+        <input class="form-input" type="text" placeholder="* Откуда" name="from_where" id="from-where">
+        <input class="form-input" type="text" placeholder="Куда" name="to_where" id="to-where">
+        <textarea class="form-input" id="comment" placeholder="Комментарий" cols="40" rows="5" name="comment"></textarea>
+        <label for="file" class="form-input" id="file-label">* Выберите файл</label>
+        <input type="file" id="file" class="form-input" name="file">
+        <span class="date-span"> * Дата загрузки:</span>
+        <input class="form-input date-input" id="date-loaded" type="datetime-local" name="loaded_time">
+        <span class="date-span">Дата разгрузки:</span>
+        <input class="form-input date-input" id="date-unloading" type="datetime-local" name="unloading_time">
+
+        <input type="text" value="" id="car-status" name="car_status">
+        <input type="text" value="❌" id="load-status" name="load_status">
+        <input type="text" value="❌" id="pay-status" name="pay_status">
+        
+        <ul class="btn-list">
+            <ul class="sub-btn-list">
+                <li>
+                    На загрузке
+                </li>
+                <li data-check-btn="1">
+                    <div class="btn"><img src="img/check.png" alt="Ok" class="btn-img"></div>
+                </li>
+            </ul>
+            <ul class="sub-btn-list">
+                <li>
+                    В пути
+                </li>
+                <li data-check-btn="2">
+                    <div class="btn"><img src="img/check.png" alt="Ok" class="btn-img"></div>
+                </li>
+            </ul>
+            <ul class="sub-btn-list">
+                <li>
+                    Доехала
+                </li>
+                <li data-check-btn="3">
+                    <div class="btn"><img src="img/check.png" alt="Ok" class="btn-img"></div>
+                </li>
+            </ul>
+        </ul>
+        <ul class="btn-list">
+            <ul class="sub-btn-list">
+                <li>
+                    На разгрузке
+                </li>
+                <li data-check-btn="4">
+                    <div class="btn"><img src="img/check.png" alt="Ok" class="btn-img"></div>
+                </li>
+            </ul>
+            <ul class="sub-btn-list">
+                <li>
+                    Оплачен
+                </li>
+                <li data-check-btn="5">
+                    <div class="btn"><img src="img/check.png" alt="Ok" class="btn-img"></div>
+                </li>
+            </ul>
+        </ul>
+        <div class="sub">
+            <span class="err">Заполните все поля помеченные *</span>
+            <span class="status-err">Выберите статус машины </span>
+            <input id="send" type="submit" value="Отправить">
+        </div>
+        
+        </div>
+    </form>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
