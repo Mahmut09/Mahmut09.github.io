@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Костюм мужской",
+    "category": "Одежда",
+    "price": 11200,
+    "image": "https://static.insales-cdn.com/r/MIn8eFb8RUs/rs:fit:400:0:1/q:100/plain/images/products/1/1615/487908943/large_sample_mens_suit_1.jpg@webp"
+  },
+  {
+    "name": "Костюм женский",
+    "category": "Одежда",
+    "price": 13560,
+    "image": "https://static.insales-cdn.com/r/7VE3yXDA-as/rs:fit:400:0:1/q:100/plain/images/products/1/1613/487908941/large_sample_woman_suit_1.jpg@webp"
+  },
+  {
+    "name": "Ноутбук",
+    "category": "Техника",
+    "price": 129990,
+    "image": "https://static.insales-cdn.com/r/s2th2aOxigI/rs:fit:400:0:1/q:100/plain/images/products/1/1608/487908936/large_sample_notebook_1.jpg@webp"
+  },
+  {
+    "name": "Смартфон",
+    "category": "Техника",
+    "price": 89990,
+    "image": "https://static.insales-cdn.com/r/x_087RyKc4o/rs:fit:400:0:1/q:100/plain/images/products/1/1588/487908916/large_smartphone_gold_0.jpeg@webp"
+  },
+  {
+    "name": "Смарт часы",
+    "category": "Техника",
+    "price": 29990,
+    "image": "https://static.insales-cdn.com/r/XzHNbr1FZsU/rs:fit:400:0:1/q:100/plain/images/products/1/1578/487908906/large_smart_watch_starlight_0.jpg@webp"
+  },
+  {
+    "name": "Футболка мужская",
+    "category": "Одежда",
+    "price": 3990,
+    "image": "https://images.satu.kz/161080637_w200_h200_futbolka-dlya-pechati.jpg"
+  },
+  {
+    "name": "Футболка женская",
+    "category": "Одежда",
+    "price": 13300,
+    "image": "https://storage-cdn5.gloria-jeans.ru/medias/GKT011148-1-01-300Wx300H.jpg?context=bWFzdGVyfHByb2R1Y3R8NzM2NnxpbWFnZS9qcGVnfGg0OS9oMjAvOTI0Njc5NzA3MDM2Ni9HS1QwMTExNDgtMS0wMV8zMDBXeDMwMEguanBnfDM0YjllZWU1NTFhODFkMWU2MWY3Y2MwZjc1NzdjNTdkYWY1ZTkzZWM0NTVlNmFlMjU0MTk0MzNhOWE0NWQwOWE"
+  },
+  {
+    "name": "Стол",
+    "category": "Мебель",
+    "price": 18440,
+    "image": "https://static.insales-cdn.com/r/OTjOib7SF5Q/rs:fit:400:0:1/q:100/plain/images/products/1/1562/487908890/large_sample_desk_1.jpg@webp"
+  },
+  {
+    "name": "Кресло",
+    "category": "Мебель",
+    "price": 24550,
+    "image": "https://static.insales-cdn.com/r/H9m2UPaou3Y/rs:fit:400:0:1/q:100/plain/images/products/1/1557/487908885/large_sample_chair_1.jpg@webp"
+  },
+  {
+    "name": "Лампа настольная",
+    "category": "Мебель",
+    "price": 13300,
+    "image": "https://static.insales-cdn.com/r/PHptfIMNVFw/rs:fit:400:0:1/q:100/plain/images/products/1/1549/487908877/large_sample_lamp_1.jpg@webp"
+  }
+]
